@@ -23,8 +23,8 @@ jobs:
     - name: Build with MSBuild
       run: msbuild Penumbra.sln /p:Configuration=Release /p:Platform=Win32
 
-- name: Upload executable
-  uses: actions/upload-artifact@v4
-  with:
-    name: Penumbra
-    path: redist/Penumbra.exe
+    - name: Upload executable
+    uses: actions/upload-artifact@v4
+    with:
+      name: Penumbra
+      path: redist/Penumbra.exe
